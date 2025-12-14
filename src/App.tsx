@@ -1,0 +1,46 @@
+// import { useState, useEffect, useRef } from 'react'
+
+import Card from './components/card.tsx'
+
+let body = {paycom: "At Paycom, I develop and maintain high-traffic SaaS applications using React on the front end and C# and PHP for backend services and API development. I work closely with UX designers and product managers to translate business requirements into intuitive, responsive, and accessible user interfaces that improve client satisfaction. I actively participate in Agile development cycles through code reviews, unit and integration testing, and CI/CD improvements, while also diagnosing performance issues, applying security best practices, and documenting architectural decisions to ensure long-term scalability and maintainability.",
+            unt: "I led the development of the North Texas Debate Team’s online presence, using Figma and Javascript to design and implement an accessible, user-friendly front end. In parallel, I developed and executed digital media strategies to promote events for the Communications Department and UNT Debate, increasing community engagement, fundraising success, and public event attendance.",
+            edu: "I earned a Bachelor of Arts in Information Technology in May 2025, graduating with a 3.8 GPA and receiving President’s List and Dean’s List honors in in 6 of 8 semesters. My academic experience included rigorous coursework in software engineering, data structures and algorithms, systems design, databases, networking, and cybersecurity. In 2024 I represented the university as a national runner-up in intercollegiate debate, which strengthened my communication and analytical skills.",
+            ctf: "I designed and built a web application that generates interactive cybersecurity teaching resources using a Flask backend and a React-based front end, following Agile development practices throughout the project lifecycle. The application was deployed using AWS for hosting and authentication and containerized with Docker, and I worked closely with stakeholders to gather requirements, incorporate feedback, and ensure the final solution aligned with instructional needs.",
+            shell: "I collaboratively designed and developed a Unix-style shell interpreter in C, demonstrating proficiency in low-level systems programming, direct system call interaction, and backend testing. The project included implementing core shell functionality such as command parsing, thread-safe process execution, pipelining, and I/O redirection, deepening my understanding of the Unix environment and software development in resource-constrained systems."
+}
+
+
+function App() {
+
+
+  return (
+    <>
+      <div className='header'>
+        <div className='header-container'></div>
+        <h1>Hello, my name is <span id='name'>Zachary Jones</span> Let’s build something great together
+          <p id='downArrow'>⌄</p>
+          </h1>
+        <div className='header-container'></div>
+      </div>
+      <div className='header-resume'>
+        <div className='resume-container'>
+          <h2>Experience</h2> 
+          <a id='resume-icon' href='/Resume.pdf'><img src='/file.svg'  alt='Resume File Icon'/></a>
+        </div>
+        <Card Name={'Paycom'} Title={'Full-Stack Developer'} Body={body.paycom} imageUrl={"/paycomLogo.svg"}/>
+        <Card Name={'University of North Texas'} Title={'Student Media Assistant'} Body={body.unt}/>
+        <Card Name={'Education'} Title={'University of North Texas'} Body={body.edu}/>
+      </div>
+      <div className='header-resume'>
+        <div className='resume-container'>
+          <h2>Projects</h2> 
+          <a id='github-icon' href='https://www.github.com/zachkjones512'><img id='github' src='/github.svg'  alt='Github Link'/></a>
+        </div>
+        <Card Name={'Cybersecurity CTF Generator'} Title={'React · Flask'} Body={body.ctf}/>
+        <Card Name={'Shell Interpreter'} Title={'C'} Body={body.shell}/>
+      </div>
+    </>
+  )
+}
+
+export default App
