@@ -29,7 +29,7 @@ function App() {
         </div>
         <Card Name={'Paycom'} Title={'Full-Stack Developer'} Body={body.paycom} imageUrl={"/paycomLogo.svg"}/>
         <Card Name={'University of North Texas'} Title={'Student Web Assistant'} Body={body.unt}/>
-        <Card Name={'Freelance'} Title={'Competitive Speech and Debate Consultant'} Body={body.unt}/>
+        <Card Name={'Freelance'} Title={'Competitive Speech and Debate Consultant'} Body={body.debate}/>
         <Card Name={'Education'} Title={`University of North Texas · Bachelor's in Information Technology · 3.8 GPA`} Body={body.edu}/>
       </div>
       <div className='header-proj'>
