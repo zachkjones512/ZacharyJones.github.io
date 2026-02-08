@@ -25,9 +25,9 @@ function App() {
       <div className='header-resume'>
         <div className='resume-container'>
           <h2>Professional Experience</h2> 
-          <a id='resume-icon' href='ZacharyJones.github.io/Resume.pdf'><img src='ZacharyJones.github.io/file.svg'  alt='Resume File Icon'/></a>
+          <a id='resume-icon' href='/Resume.pdf'><img src='/file.svg'  alt='Resume File Icon'/></a>
         </div>
-        <Card Name={'Paycom'} Title={'Full-Stack Developer'} Body={body.paycom} imageUrl={"ZacharyJones.github.io/paycomLogo.svg"}/>
+        <Card Name={'Paycom'} Title={'Full-Stack Developer'} Body={body.paycom} imageUrl={"/paycomLogo.svg"}/>
         <Card Name={'University of North Texas'} Title={'Student Web Assistant'} Body={body.unt}/>
         <Card Name={'Freelance'} Title={'Competitive Speech and Debate Consultant'} Body={body.unt}/>
         <Card Name={'Education'} Title={`University of North Texas · Bachelor's in Information Technology · 3.8 GPA`} Body={body.edu}/>
@@ -35,7 +35,7 @@ function App() {
       <div className='header-proj'>
         <div className='resume-container'>
           <h2>Personal Projects</h2> 
-          <a id='github-icon' href='https://www.github.com/zachkjones512'><img id='github' src='ZacharyJones.github.io/github.svg'  alt='Github Link'/></a>
+          <a id='github-icon' href='https://www.github.com/zachkjones512'><img id='github' src='/github.svg'  alt='Github Link'/></a>
         </div>
         <Card Name={'Cybersecurity CTF Generator'} Title={'Typescript · React · Flask · AWS Amplify '} Body={body.ctf}/>
         <Card Name={'Shell Interpreter'} Title={'C'} Body={body.shell}/>
