@@ -40,7 +40,7 @@ body {
 .header{
   display: flex;
   flex-direction: column;
-  width: 70%;
+  width: 75%;
   animation: slideIn 1s ease-out;
   justify-self: center;
   align-self: center;
@@ -77,7 +77,25 @@ h1 {
   flex-direction: column;
   justify-content: start;
   align-items: start;
+  height:125vh;
+  width: 100%;
+}
+
+.header-proj{
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
   height:100vh;
+  width: 100%;
+}
+
+.header-skills{
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  height:80vh;
   width: 100%;
 }
 
