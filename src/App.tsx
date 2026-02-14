@@ -15,41 +15,46 @@ function App() {
 
   return (
     <>
-      <div className='header'>
+      <div className='min-h-screen flex flex-col items-center justify-center w-full animate-slideIn text-center px-6'>
         <div className='header-container'></div>
-        <h1>Hello, my name is <span id='name'>Zachary Jones</span> Let’s build impactful software together
-          <p id='downArrow'>⌄</p>
-          </h1>
+        <h1 className="text-5xl md:text-6xl font-semibold leading-tight max-w-4xl">Hello, my name is {" "} 
+          <span className='bg-linear-to-b from-purple-600 to-green-400 bg-clip-text text-transparent' id='name'>Zachary Jones</span> 
+          {" "}Let’s build impactful software together</h1>
+        <p className=' mt-20 text-[1em] font-light animate-pulseY' id='downArrow'>⌄</p>
         <div className='header-container'></div>
       </div>
-      <div className='header-resume'>
-        <div className='resume-container'>
-          <h2>Professional Experience</h2> 
-          <a id='resume-icon' href='/Resume.pdf'><img src='/file.svg'  alt='Resume File Icon'/></a>
+      <div className='flex flex-col items-start w-full min-h-screen py-16 gap-4'>
+        <div className='w-full flex items-center py-2'>
+          <h2 className='text-[1.5em]'>Professional Experience</h2> 
+          <a href='/Resume.pdf'>
+            <img src='/file.svg' className=' ml-6 w-6 h-6 object-contain'  alt='Resume File Icon'/>
+          </a>
         </div>
         <Card Name={'Paycom'} Title={'Full-Stack Developer'} Body={body.paycom} imageUrl={"/paycomLogo.svg"}/>
         <Card Name={'University of North Texas'} Title={'Student Web Assistant'} Body={body.unt}/>
         <Card Name={'Freelance'} Title={'Competitive Speech and Debate Consultant'} Body={body.debate}/>
         <Card Name={'Education'} Title={`University of North Texas · Bachelor's in Information Technology · 3.8 GPA`} Body={body.edu}/>
       </div>
-      <div className='header-proj'>
-        <div className='resume-container'>
-          <h2>Personal Projects</h2> 
-          <a id='github-icon' href='https://www.github.com/zachkjones512'><img id='github' src='/github.svg'  alt='Github Link'/></a>
+      <div className='flex flex-col items-start w-full min-h-screen py-16 gap-4'>
+        <div className='w-full flex items-center py-2'>
+          <h2 className='text-[1.5em]'>Personal Projects</h2> 
+          <a className='w-1/2' href='https://www.github.com/zachkjones512' target="_blank" rel="noopener noreferrer">
+            <img src='/github.svg' className='ml-6 w-6 h-6 object-contain' alt='Github Link'/>
+          </a>
         </div>
         <Card Name={'Cybersecurity CTF Generator'} Title={'Typescript · React · Flask · AWS Amplify '} Body={body.ctf}/>
         <Card Name={'Shell Interpreter'} Title={'C'} Body={body.shell}/>
         <Card Name={'JWKS Authentication Server'} Title={'.NET/C#'} Body={body.JWKS}/>
       </div>
-      <div className='header-skills'>
-        <div className='resume-container'>
-          <h2>Skills</h2> 
+      <div className='flex flex-col items-start w-full min-h-screen py-16 gap-4'>
+        <div className='w-full flex items-center justify-between py-2'>
+          <h2 className='text-[1.5em]'>Skills</h2> 
         </div>
         <Card Name={'Languages'} Title={'React · TypeScript · C#/.NET · C++ · Node · PHP'} Body={""}/>
         <Card Name={'Technologies'} Title={'Git · SQL · UNIX/Bash · Jira · AWS Lambda · Visual Studio'} Body={""}/>
         <Card Name={'Certifications'} Title={'Adobe Certified Professional: Premiere Pro/Photoshop · Microsoft Office Specialist: Access/Excel'} Body={""}/>
       </div>
-      <p>Interested in learning more? Find me on <a href='https://www.linkedin.com/in/zachary-k-jones/'>LinkedIn</a></p>
+      <p>Interested in learning more? Find me on <a className='font-medium text-indigo-500 hover:text-indigo-400 transition-colors' href='https://www.linkedin.com/in/zachary-k-jones/'>LinkedIn</a></p>
     </>
   )
 }
